@@ -6,7 +6,7 @@ public class DataObject
 		m_strKey = strKey;
 	}
 	
-	String m_strKey = "";
+	private String m_strKey = "";
 	// Other data here.
 	
 	public String GetKey() 

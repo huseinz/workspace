@@ -14,5 +14,23 @@ public class Utility
 		return( lHashValue & 0x7fffffff );
 	}
 	
+	//find next prime number after n
+	public static int nextPrime(int n){
+		
+		while(!isPrime(n))
+			n++;
+		return n;
+	}
+	
+	public static boolean isPrime(int n) {
+		
+	    if (n%2==0) return false;
+	    
+	    for(int i=3;i*i<=n;i+=2) {
+	        if(n%i==0)
+	            return false;
+	    }
+	    return true;
+	}
 	
 }

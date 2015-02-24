@@ -3,10 +3,10 @@
 
 public class HashExperiments 
 {
-	public static void main(String[] args) 
+	public static void main(String[] args) throws Exception 
 	{
 		
-		LinearHash lh = new LinearHash(300);
+		LinearHash lh = new LinearHash();
 		SeparateChaining sh = new SeparateChaining();
 		QuadraticHashing qh = new QuadraticHashing();
 
@@ -15,18 +15,18 @@ public class HashExperiments
 		
 		for( int i=0; i<Lists.ListOne.length; i++ )
 		{
-			lh.put( Lists.ListOne[i], new DataObject( Lists.ListOne[i] ) );
-			sh.put( Lists.ListOne[i], new DataObject( Lists.ListOne[i] ) );
-			qh.put( Lists.ListOne[i], new DataObject( Lists.ListOne[i] ) );
+			lh.put( new DataObject( Lists.ListOne[i] ));
+			sh.put( new DataObject( Lists.ListOne[i] ) );
+			qh.put( new DataObject( Lists.ListOne[i] ) );
 		}
 
 		long end = System.currentTimeMillis();
 		// Print out the time it took.
 		System.out.println("Took "+(end-start)+" ms.");
 		
-		/*for(int i = 0; i < Lists.ListOne.length; i++)
+	/*	for(int i = 0; i < Lists.ListOne.length; i++)
 		{
-			System.out.println(qh.get(Lists.ListOne[i]).m_strKey);
+			System.out.println(qh.get(Lists.ListOne[i]).GetKey());
 		}*/
 	}
 

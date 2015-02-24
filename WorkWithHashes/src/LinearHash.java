@@ -18,7 +18,7 @@ public class LinearHash
 	}
 	
 	//resize hash table
-	public void Resize()
+	public void Resize() throws Exception
 	{
 			//System.out.println("Resizing...");
 		
@@ -33,7 +33,7 @@ public class LinearHash
 		for(int i = 0; i < m_nTableSize / 2; i++)
 		{
 			if(OldObjectArray[i] != null)
-				this.put(OldObjectArray[i].m_strKey, new DataObject(OldObjectArray[i].m_strKey));
+				this.put( new DataObject(OldObjectArray[i].GetKey()));
 		}
 	}
 	
@@ -45,20 +45,29 @@ public class LinearHash
 	 *  	DataObject to be stored
 	 *  
 	 */
-	public void put( String strKey, DataObject objData )
+	public void put(DataObject objData) throws Exception
 	{
+		if(objData == null)
+			throw new NullPointerException();
+		
 		//Resize if necessary
-		if((float)m_nOccupied/(float)m_nTableSize > 0.7)
+		if((float)m_nOccupied/(float)m_nTableSize > 0.5)
 			Resize();
 		
-		long lHash = Utility.HashFromString(strKey) % m_nTableSize;
+		long lHash = Utility.HashFromString(objData.GetKey()) % m_nTableSize;
+		long lStart = lHash;
 
 		while( m_ObjectArray[(int)(lHash%m_nTableSize)] != null)
 		{
-			if(m_ObjectArray[(int)(lHash%m_nTableSize)].GetKey().equals(strKey))
+			if(m_ObjectArray[(int)(lHash%m_nTableSize)].GetKey().equals(objData.GetKey()))
 				break;
-
+			
 			lHash++;
+			
+			if((lStart % m_nTableSize) == (lHash % m_nTableSize))
+			{
+				throw new Exception("No empty slot");
+			}
 		}
 		
 		m_ObjectArray[(int)lHash%m_nTableSize] = objData;
@@ -71,8 +80,9 @@ public class LinearHash
 	 * 	key to be searched for
 	 * @return
 	 * 	found DataObject
+	 * @throws Exception 
 	 */
-	public DataObject get( String strKey )
+	public DataObject get( String strKey ) throws Exception
 	{
 		long lHash = Utility.HashFromString(strKey) % m_nTableSize;
 		
