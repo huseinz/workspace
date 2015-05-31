@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="16" version="2.0">
+<workbench progressCount="21" version="2.0">
 <workbenchAdvisor/>
 <window height="743" maximized="true" width="683" x="683" y="0">
 <fastViewData fastViewLocation="1024"/>
@@ -19,6 +19,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="256" y="36"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.browser.editor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -34,21 +35,26 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
+<part id="3"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BST.java" partName="BST.java" path="/home/zubir/workspace/BinarySearchTrees/src/BST.java" title="BST.java" tooltip="BinarySearchTrees/src/BST.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BinarySearchTrees/src/BST.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3414" selectionTopPixel="3455"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Huffman.java" partName="Huffman.java" path="/home/zubir/workspace/Huffman/src/Huffman.java" title="Huffman.java" tooltip="Huffman/src/Huffman.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Huffman/src/Huffman.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="237" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BinarySearchTrees.java" partName="BinarySearchTrees.java" path="/home/zubir/workspace/BinarySearchTrees/src/BinarySearchTrees.java" title="BinarySearchTrees.java" tooltip="BinarySearchTrees/src/BinarySearchTrees.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BinarySearchTrees/src/BinarySearchTrees.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="687" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BinaryHeap.java" partName="BinaryHeap.java" path="/home/zubir/workspace/Huffman/src/BinaryHeap.java" title="BinaryHeap.java" tooltip="Huffman/src/BinaryHeap.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Huffman/src/BinaryHeap.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="69" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BSTNode.java" partName="BSTNode.java" path="/home/zubir/workspace/BinarySearchTrees/src/BSTNode.java" title="BSTNode.java" tooltip="BinarySearchTrees/src/BSTNode.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BinarySearchTrees/src/BSTNode.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="118" selectionTopPixel="854"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HuffmanTree.java" partName="HuffmanTree.java" path="/home/zubir/workspace/Huffman/src/HuffmanTree.java" title="HuffmanTree.java" tooltip="Huffman/src/HuffmanTree.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Huffman/src/HuffmanTree.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CSRecitationWeek2.java" partName="CSRecitationWeek2.java" path="/home/zubir/workspace/Week2Recitation/src/CSRecitationWeek2.java" title="CSRecitationWeek2.java" tooltip="Week2Recitation/src/CSRecitationWeek2.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Week2Recitation/src/CSRecitationWeek2.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="6651"/>
 </editor>
 </editors>
 <views>
@@ -64,7 +70,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (14 items)"/>
+<category IMemento.internal.id="Warnings (22 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="548" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -396,159 +402,169 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BinarySearchTrees/src/BST.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/CaesarCipher/src/CaesarCipher.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Week10Programming/src/CS2ProgrammingWeek10.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LCS/src/LCS.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Connect4/src/MiniMax.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Huffman/src/Huffman.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Huffman/src/BinaryHeap.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Huffman/src/HuffmanTree.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Week10Programming/src/CS2ProgrammingWeek10.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Week4Programming/src/CS2ProgrammingWeek4.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BinarySearchTrees/src/BinarySearchTrees.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BinarySearchTrees/src/BSTNode.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BinarySearchTrees/src/BST.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Week6Programming/src/CS2ProgrammingWeek6.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Week2Recitation/src/CSRecitationWeek2.java"/>
 </editors>
-<item historyLabel="BinarySearchTrees.java" index="1">
+<item historyLabel="CaesarCipher.java" index="0">
+<position info="not_deleted" x="2168" y="0"/>
+</item>
+<item historyLabel="CaesarCipher.java" index="0">
+<position info="not_deleted" x="2201" y="0"/>
+</item>
+<item historyLabel="CaesarCipher.java" index="0">
+<position info="not_deleted" x="2271" y="0"/>
+</item>
+<item historyLabel="CaesarCipher.java" index="0">
+<position info="not_deleted" x="2265" y="0"/>
+</item>
+<item historyLabel="CaesarCipher.java" index="0">
+<position info="not_deleted" x="2363" y="0"/>
+</item>
+<item historyLabel="CaesarCipher.java" index="0">
+<position info="not_deleted" x="2350" y="0"/>
+</item>
+<item historyLabel="CaesarCipher.java" index="0">
+<position info="not_deleted" x="2400" y="0"/>
+</item>
+<item historyLabel="CaesarCipher.java" index="0">
+<position info="not_deleted" x="2740" y="0"/>
+</item>
+<item historyLabel="CaesarCipher.java" index="0">
+<position info="not_deleted" x="2719" y="0"/>
+</item>
+<item historyLabel="CaesarCipher.java" index="0">
+<position info="not_deleted" x="2732" y="0"/>
+</item>
+<item historyLabel="CaesarCipher.java" index="0">
+<position info="not_deleted" x="2738" y="0"/>
+</item>
+<item historyLabel="CaesarCipher.java" index="0">
+<position info="not_deleted" x="2964" y="0"/>
+</item>
+<item historyLabel="CaesarCipher.java" index="0">
+<position info="not_deleted" x="382" y="51"/>
+</item>
+<item historyLabel="CaesarCipher.java" index="0">
+<position info="not_deleted" x="331" y="0"/>
+</item>
+<item historyLabel="CaesarCipher.java" index="0">
+<position info="not_deleted" x="382" y="51"/>
+</item>
+<item historyLabel="CaesarCipher.java" index="0">
+<position info="not_deleted" x="2898" y="0"/>
+</item>
+<item historyLabel="CaesarCipher.java" index="0">
+<position info="not_deleted" x="46" y="0"/>
+</item>
+<item historyLabel="CS2ProgrammingWeek10.java" index="1">
+<position info="not_deleted" x="558" y="70"/>
+</item>
+<item historyLabel="CaesarCipher.java" index="0">
+<position info="not_deleted" x="102" y="0"/>
+</item>
+<item historyLabel="LCS.java" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="LCS.java" index="2">
 <position/>
 </item>
-<item historyLabel="BinarySearchTrees.java" index="1">
+<item historyLabel="LCS.java" index="2">
 <position/>
 </item>
-<item historyLabel="BST.java" index="0">
-<position info="not_deleted" x="2080" y="0"/>
-</item>
-<item historyLabel="BinarySearchTrees.java" index="1">
+<item historyLabel="LCS.java" index="2">
 <position/>
 </item>
-<item historyLabel="BST.java" index="0">
-<position info="not_deleted" x="2080" y="0"/>
-</item>
-<item historyLabel="BinarySearchTrees.java" index="1">
+<item historyLabel="LCS.java" index="2">
 <position/>
 </item>
-<item historyLabel="BinarySearchTrees.java" index="1">
+<item historyLabel="LCS.java" index="2">
 <position/>
 </item>
-<item historyLabel="BinarySearchTrees.java" index="1">
+<item historyLabel="LCS.java" index="2">
 <position/>
 </item>
-<item historyLabel="BST.java" index="0">
-<position info="not_deleted" x="2080" y="0"/>
+<item historyLabel="LCS.java" index="2">
+<position/>
 </item>
-<item historyLabel="BinarySearchTrees.java" index="1">
-<position info="not_deleted" x="224" y="0"/>
+<item historyLabel="LCS.java" index="2">
+<position/>
 </item>
-<item historyLabel="BST.java" index="0">
-<position info="not_deleted" x="153" y="0"/>
+<item historyLabel="LCS.java" index="2">
+<position info="not_deleted" x="1166" y="0"/>
 </item>
-<item historyLabel="BinarySearchTrees.java" index="1">
-<position info="not_deleted" x="224" y="0"/>
+<item historyLabel="LCS.java" index="2">
+<position info="not_deleted" x="900" y="0"/>
 </item>
-<item historyLabel="BSTNode.java" index="2">
-<position info="not_deleted" x="121" y="0"/>
+<item historyLabel="MiniMax.java" index="3">
+<position info="not_deleted" x="50" y="0"/>
 </item>
-<item historyLabel="BST.java" index="0">
-<position info="not_deleted" x="303" y="0"/>
+<item historyLabel="Huffman.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="BSTNode.java" index="2">
-<position info="not_deleted" x="355" y="0"/>
+<item historyLabel="BinaryHeap.java" index="5">
+<position info="not_deleted" x="23" y="0"/>
 </item>
-<item historyLabel="BST.java" index="0">
-<position info="not_deleted" x="2827" y="0"/>
+<item historyLabel="HuffmanTree.java" index="6">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="BSTNode.java" index="2">
-<position info="not_deleted" x="355" y="0"/>
+<item historyLabel="BinaryHeap.java" index="5">
+<position info="not_deleted" x="69" y="0"/>
 </item>
-<item historyLabel="BinarySearchTrees.java" index="1">
-<position info="not_deleted" x="224" y="0"/>
+<item historyLabel="CS2ProgrammingWeek10.java" index="7">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="BST.java" index="0">
-<position info="not_deleted" x="2827" y="0"/>
+<item historyLabel="BinaryHeap.java" index="5">
+<position info="not_deleted" x="69" y="0"/>
 </item>
-<item historyLabel="BinarySearchTrees.java" index="1">
-<position info="not_deleted" x="224" y="0"/>
+<item historyLabel="CS2ProgrammingWeek4.java" index="8">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="BinarySearchTrees.java" index="1">
-<position info="not_deleted" x="341" y="0"/>
+<item historyLabel="BinaryHeap.java" index="5">
+<position info="not_deleted" x="69" y="0"/>
 </item>
-<item historyLabel="BinarySearchTrees.java" index="1">
-<position info="not_deleted" x="341" y="0"/>
+<item historyLabel="BinarySearchTrees.java" index="9">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="BST.java" index="0">
-<position info="not_deleted" x="5664" y="0"/>
+<item historyLabel="BinaryHeap.java" index="5">
+<position info="not_deleted" x="69" y="0"/>
 </item>
-<item historyLabel="BinarySearchTrees.java" index="1">
-<position info="not_deleted" x="687" y="0"/>
+<item historyLabel="BST.java" index="10">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="BST.java" index="0">
-<position info="not_deleted" x="4912" y="0"/>
+<item historyLabel="BinaryHeap.java" index="5">
+<position info="not_deleted" x="69" y="0"/>
 </item>
-<item historyLabel="BSTNode.java" index="2">
-<position info="not_deleted" x="355" y="0"/>
+<item historyLabel="CS2ProgrammingWeek6.java" index="11">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="BinarySearchTrees.java" index="1">
-<position info="not_deleted" x="687" y="0"/>
+<item historyLabel="CS2ProgrammingWeek6.java" index="11">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="BST.java" index="0">
-<position info="not_deleted" x="6684" y="0"/>
+<item historyLabel="BinaryHeap.java" index="5">
+<position info="not_deleted" x="69" y="0"/>
 </item>
-<item historyLabel="BinarySearchTrees.java" index="1">
-<position info="not_deleted" x="687" y="0"/>
+<item historyLabel="CSRecitationWeek2.java" index="12">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="BinarySearchTrees.java" index="1">
-<position info="not_deleted" x="458" y="0"/>
+<item historyLabel="CSRecitationWeek2.java" index="12">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="BST.java" index="0">
-<position info="not_deleted" x="6530" y="0"/>
+<item historyLabel="Huffman.java" index="4">
+<position info="not_deleted" x="237" y="0"/>
 </item>
-<item historyLabel="BSTNode.java" index="2">
-<position info="not_deleted" x="355" y="0"/>
-</item>
-<item historyLabel="BinarySearchTrees.java" index="1">
-<position info="not_deleted" x="546" y="0"/>
-</item>
-<item historyLabel="BST.java" index="0">
-<position info="not_deleted" x="6374" y="0"/>
-</item>
-<item historyLabel="BinarySearchTrees.java" index="1">
-<position info="not_deleted" x="519" y="0"/>
-</item>
-<item historyLabel="BST.java" index="0">
-<position info="not_deleted" x="2314" y="0"/>
-</item>
-<item historyLabel="BinarySearchTrees.java" index="1">
-<position info="not_deleted" x="519" y="0"/>
-</item>
-<item historyLabel="BinarySearchTrees.java" index="1">
-<position info="not_deleted" x="687" y="0"/>
-</item>
-<item historyLabel="BST.java" index="0">
-<position info="not_deleted" x="6994" y="0"/>
-</item>
-<item historyLabel="BinarySearchTrees.java" index="1">
-<position info="not_deleted" x="662" y="8"/>
-</item>
-<item historyLabel="BST.java" index="0">
-<position info="not_deleted" x="6712" y="0"/>
-</item>
-<item historyLabel="BinarySearchTrees.java" index="1">
-<position info="not_deleted" x="662" y="8"/>
-</item>
-<item historyLabel="BinarySearchTrees.java" index="1">
-<position info="not_deleted" x="687" y="0"/>
-</item>
-<item historyLabel="BST.java" index="0">
-<position info="not_deleted" x="6712" y="0"/>
-</item>
-<item historyLabel="BinarySearchTrees.java" index="1">
-<position info="not_deleted" x="687" y="0"/>
-</item>
-<item historyLabel="BST.java" index="0">
-<position info="not_deleted" x="153" y="0"/>
-</item>
-<item historyLabel="BSTNode.java" index="2">
-<position info="not_deleted" x="118" y="0"/>
-</item>
-<item historyLabel="BST.java" index="0">
-<position info="not_deleted" x="153" y="0"/>
-</item>
-<item historyLabel="BSTNode.java" index="2">
-<position info="not_deleted" x="118" y="0"/>
-</item>
-<item active="true" historyLabel="BST.java" index="0">
-<position info="not_deleted" x="153" y="0"/>
+<item active="true" historyLabel="CSRecitationWeek2.java" index="12">
+<position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -556,13 +572,6 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="left"/>
-</trimArea>
-<trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="bottom"/>
-<trimItem IMemento.internal.id="right"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -574,50 +583,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BSTNode.java" tooltip="BinarySearchTrees/src/BSTNode.java">
-<persistable path="/BinarySearchTrees/src/BSTNode.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BinarySearchTrees.java" tooltip="BinarySearchTrees/src/BinarySearchTrees.java">
-<persistable path="/BinarySearchTrees/src/BinarySearchTrees.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BST.java" tooltip="BinarySearchTrees/src/BST.java">
-<persistable path="/BinarySearchTrees/src/BST.java"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Thread.class" tooltip="java.lang.Thread">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=3502_Week1/\/usr\/lib\/jvm\/java-7-openjdk-amd64\/jre\/lib\/rt.jar&lt;java.lang(Thread.class"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CS2ProgrammingWeek4.java" tooltip="Week4Programming/src/CS2ProgrammingWeek4.java">
-<persistable path="/Week4Programming/src/CS2ProgrammingWeek4.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EightQueens.java" tooltip="EightQueens/src/EightQueens.java">
-<persistable path="/EightQueens/src/EightQueens.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CS2RecitationWeek3.java" tooltip="Week3Recitation/src/CS2RecitationWeek3.java">
-<persistable path="/Week3Recitation/src/CS2RecitationWeek3.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CS2ProgrammingWeek3.java" tooltip="Week3Programming/src/CS2ProgrammingWeek3.java">
-<persistable path="/Week3Programming/src/CS2ProgrammingWeek3.java"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CSRecitationWeek2.java" tooltip="Week2Recitation/src/CSRecitationWeek2.java">
 <persistable path="/Week2Recitation/src/CSRecitationWeek2.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CS2ProgrammingWeek2.java" tooltip="Week2Programming/src/CS2ProgrammingWeek2.java">
-<persistable path="/Week2Programming/src/CS2ProgrammingWeek2.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="queen.png" tooltip="EightQueens/src/queen.png">
-<persistable path="/EightQueens/src/queen.png"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CS2ProgrammingWeek6.java" tooltip="Week6Programming/src/CS2ProgrammingWeek6.java">
 <persistable path="/Week6Programming/src/CS2ProgrammingWeek6.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Floodfill.java" tooltip="FloodFill/src/Floodfill.java">
-<persistable path="/FloodFill/src/Floodfill.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BST.java" tooltip="BinarySearchTrees/src/BST.java">
+<persistable path="/BinarySearchTrees/src/BST.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Utility.java" tooltip="WorkWithHashes/src/Utility.java">
-<persistable path="/WorkWithHashes/src/Utility.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BinarySearchTrees.java" tooltip="BinarySearchTrees/src/BinarySearchTrees.java">
+<persistable path="/BinarySearchTrees/src/BinarySearchTrees.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SeparateChaining.java" tooltip="WorkWithHashes/src/SeparateChaining.java">
-<persistable path="/WorkWithHashes/src/SeparateChaining.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CS2ProgrammingWeek4.java" tooltip="Week4Programming/src/CS2ProgrammingWeek4.java">
+<persistable path="/Week4Programming/src/CS2ProgrammingWeek4.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CS2ProgrammingWeek10.java" tooltip="Week10Programming/src/CS2ProgrammingWeek10.java">
+<persistable path="/Week10Programming/src/CS2ProgrammingWeek10.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HuffmanTree.java" tooltip="Huffman/src/HuffmanTree.java">
+<persistable path="/Huffman/src/HuffmanTree.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BinaryHeap.java" tooltip="Huffman/src/BinaryHeap.java">
+<persistable path="/Huffman/src/BinaryHeap.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Huffman.java" tooltip="Huffman/src/Huffman.java">
+<persistable path="/Huffman/src/Huffman.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MiniMax.java" tooltip="Connect4/src/MiniMax.java">
+<persistable path="/Connect4/src/MiniMax.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LCS.java" tooltip="LCS/src/LCS.java">
+<persistable path="/LCS/src/LCS.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CaesarCipher.java" tooltip="CaesarCipher/src/CaesarCipher.java">
+<persistable path="/CaesarCipher/src/CaesarCipher.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DuelingPhilosophers.java" tooltip="DuelingPhilosophers/src/DuelingPhilosophers.java">
+<persistable path="/DuelingPhilosophers/src/DuelingPhilosophers.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CS2ProgrammingWeek9.java" tooltip="Week9Programming/src/CS2ProgrammingWeek9.java">
+<persistable path="/Week9Programming/src/CS2ProgrammingWeek9.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CS2RecitationWeek3.java" tooltip="Week3Recitation/src/CS2RecitationWeek3.java">
+<persistable path="/Week3Recitation/src/CS2RecitationWeek3.java"/>
 </file>
 </mruList>
 </workbench>
